@@ -27,3 +27,9 @@ This public release packages the repository for GitHub presentation while preser
 The repository is intended as a local-first research/engineering prototype. Full workflows require local artifacts created from a user's own corpus.
 
 `enhanced_sql_relation` is a controlled fusion retrieval mode for domain-specific corpora. It is not a one-to-one reproduction of SAG.
+
+## v0.1.0 Release Candidate
+
+The repository is prepared for a future `v0.1.0` release draft. This pass adds a changelog, release checklist, release draft notes, and repository presentation check.
+
+No GitHub release or tag has been created yet.

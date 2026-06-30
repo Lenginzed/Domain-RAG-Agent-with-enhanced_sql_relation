@@ -89,6 +89,10 @@ docs/*.md
 !docs/public_mini_demo.md
 !docs/public_walkthrough.md
 !docs/troubleshooting.md
+!docs/release_checklist.md
+!docs/repository_presentation_check.md
 !docs/faq.md
+!docs/releases/
+!docs/releases/*.md
 !docs/dev_reports/
 !docs/dev_reports/README.md

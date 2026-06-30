@@ -7,7 +7,7 @@
 
 A local-first Domain-RAG Agent prototype with controlled SQL-relation retrieval, evidence quality checks, answer reliability handling, and human-review workflow.
 
-This is a local-first research/engineering prototype, not a production-ready RAG platform.
+This is a local-first research/engineering prototype, not intended for production use.
 
 This repository does not include local Chroma databases, SQLite indexes, raw imported documents, model weights, private logs, or full evaluation artifacts.
 
@@ -263,6 +263,17 @@ Current public status:
 - public repo contains examples, not the private corpus or full local outputs.
 
 More detail: [docs/project_status.md](docs/project_status.md)
+
+## Release Draft
+
+The current public repository is prepared as a `v0.1.0` safe public release candidate. No GitHub release or tag has been created in this pass.
+
+See:
+
+- [Changelog](CHANGELOG.md)
+- [v0.1.0 release draft](docs/releases/v0.1.0.md)
+- [Release checklist](docs/release_checklist.md)
+- [Repository presentation check](docs/repository_presentation_check.md)
 
 ## Roadmap
 

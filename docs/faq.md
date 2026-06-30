@@ -10,7 +10,7 @@ Not immediately. You can inspect the code, docs, example configs, and sample out
 
 ## 3. Is this ready for production use?
 
-No. This is a local-first research/engineering prototype, not a production-ready RAG platform.
+No. This is a local-first research/engineering prototype, not intended for production use.
 
 ## 4. Is this a direct SAG reproduction?
 

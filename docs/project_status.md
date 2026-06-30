@@ -9,6 +9,7 @@
 - Sanitized sample outputs included.
 - V5.1 adds a fully synthetic public mini demo that builds a temporary relation index locally.
 - V5.2 improves the public run walkthrough, expected output notes, troubleshooting, and documentation link checks.
+- V5.3 prepares the repository for a `v0.1.0` release draft. No GitHub release or tag has been created in this pass.
 
 ## Implemented in Code
 
