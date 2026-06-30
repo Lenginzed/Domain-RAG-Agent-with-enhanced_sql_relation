@@ -9,7 +9,10 @@
 - Sanitized sample outputs included.
 - V5.1 adds a fully synthetic public mini demo that builds a temporary relation index locally.
 - V5.2 improves the public run walkthrough, expected output notes, troubleshooting, and documentation link checks.
-- V5.3 prepares the repository for a `v0.1.0` release draft. No GitHub release or tag has been created in this pass.
+- V5.3 prepared the repository for a `v0.1.0` release draft.
+- V5.4 creates the `v0.1.0` release tag and GitHub Release from the safe public repository state.
+- The public mini demo remains synthetic and retrieval-only.
+- Local private data and generated artifacts are not included.
 
 ## Implemented in Code
 

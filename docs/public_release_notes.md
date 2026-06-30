@@ -28,8 +28,8 @@ The repository is intended as a local-first research/engineering prototype. Full
 
 `enhanced_sql_relation` is a controlled fusion retrieval mode for domain-specific corpora. It is not a one-to-one reproduction of SAG.
 
-## v0.1.0 Release Candidate
+## v0.1.0 Release
 
-The repository is prepared for a future `v0.1.0` release draft. This pass adds a changelog, release checklist, release draft notes, and repository presentation check.
+The repository has a `v0.1.0` release prepared from the safe public repository state.
 
-No GitHub release or tag has been created yet.
+This release includes a changelog, release checklist, release notes, repository presentation check, and the synthetic public mini demo. The public mini demo remains retrieval-only. Local private data and generated artifacts are not included.

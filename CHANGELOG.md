@@ -22,7 +22,7 @@
 ### Changed
 
 - Public documentation now emphasizes local-first usage and explicit data boundaries.
-- README now links to the public mini demo, walkthrough, expected output, troubleshooting, and release draft.
+- README now links to the public mini demo, walkthrough, expected output, troubleshooting, and release notes.
 - Generated local artifacts are kept outside git.
 
 ### Documentation

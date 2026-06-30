@@ -264,14 +264,14 @@ Current public status:
 
 More detail: [docs/project_status.md](docs/project_status.md)
 
-## Release Draft
+## Release
 
-The current public repository is prepared as a `v0.1.0` safe public release candidate. No GitHub release or tag has been created in this pass.
+The current public repository has a `v0.1.0` release prepared from the safe public repository state.
 
 See:
 
 - [Changelog](CHANGELOG.md)
-- [v0.1.0 release draft](docs/releases/v0.1.0.md)
+- [v0.1.0 release notes](docs/releases/v0.1.0.md)
 - [Release checklist](docs/release_checklist.md)
 - [Repository presentation check](docs/repository_presentation_check.md)
 
