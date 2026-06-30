@@ -8,6 +8,7 @@
 - Local runtime artifacts excluded.
 - Sanitized sample outputs included.
 - V5.1 adds a fully synthetic public mini demo that builds a temporary relation index locally.
+- V5.2 improves the public run walkthrough, expected output notes, troubleshooting, and documentation link checks.
 
 ## Implemented in Code
 

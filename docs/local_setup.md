@@ -87,6 +87,10 @@ conda run -n Lenginzed_RAG python -m pytest tests/test_v51_public_mini_demo.py
 
 It does not require Chroma, Ollama, a prebuilt SQLite DB, or private documents. Generated files are written under `tmp/mini_demo/` and should not be committed.
 
+Walkthrough: [public mini demo walkthrough](public_walkthrough.md).
+
+Expected output: [mini corpus expected output](../examples/mini_corpus/EXPECTED_OUTPUT.md).
+
 ## 8. Streamlit UI
 
 After local configs and artifacts are prepared:

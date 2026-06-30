@@ -39,7 +39,7 @@ Some scripts require local artifacts that are not included in the public reposit
 
 ## tests/
 
-Smoke and regression tests. Some tests are public-safe module checks; others assume local artifacts if run in the original research workspace.
+Lightweight and regression checks. Some tests are public-safe module checks; others assume local artifacts if run in the original research workspace.
 
 ## config/
 
@@ -49,11 +49,16 @@ Only `*.example.yaml` files should be tracked. Copy them to local config files b
 
 Public documentation for architecture, method design, local setup, data policy, project status, and FAQ.
 
+- `docs/public_walkthrough.md`: step-by-step public mini demo guide.
+- `docs/troubleshooting.md`: common local setup and Git issues.
+
 ## examples/
 
 Sanitized samples that show output structure. These are not full local evaluation artifacts.
 
 `examples/mini_corpus/` contains a synthetic public mini corpus for the runnable demo.
+
+- `examples/mini_corpus/EXPECTED_OUTPUT.md`: expected output for the public mini demo.
 
 ## data/eval/
 

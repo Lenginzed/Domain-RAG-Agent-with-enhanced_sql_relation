@@ -12,3 +12,5 @@ conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
 ```
 
 Generated artifacts are written to `tmp/mini_demo/` and are ignored by git.
+
+Expected output: [EXPECTED_OUTPUT.md](EXPECTED_OUTPUT.md).

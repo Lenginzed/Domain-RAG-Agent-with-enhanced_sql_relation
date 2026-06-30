@@ -31,3 +31,31 @@ Retrieval-only workflows do not require an LLM. Full answer generation can use a
 ## 8. Can I use my own corpus?
 
 Yes. The code is organized so you can adapt loaders, configs, and index-building scripts to your own local corpus. Keep private data and generated indexes outside git.
+
+## 9. How do I run the public mini demo?
+
+Run these commands from the repository root:
+
+```powershell
+conda run -n Lenginzed_RAG python scripts/build_mini_demo_index_v51.py
+conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
+conda run -n Lenginzed_RAG python -m pytest tests/test_v51_public_mini_demo.py
+```
+
+The demo uses only synthetic files under `examples/mini_corpus/`.
+
+## 10. Why does the repo not include generated SQLite DB files?
+
+Generated DB files are runtime artifacts. They may contain local corpus-derived data, so the public repo excludes them. The public mini demo builds a temporary DB locally under `tmp/mini_demo/`.
+
+## 11. Does the mini demo require a local LLM?
+
+No. The public mini demo is retrieval-only. It does not require Ollama or any LLM call.
+
+## 12. Why are generated files under `tmp/mini_demo/` ignored?
+
+They are local outputs. Ignoring them keeps generated DBs and result files out of git while still letting users rerun the demo.
+
+## 13. What should I check if GitHub push fails?
+
+Check general network access to GitHub, proxy settings, credential status, and whether the remote branch has newer commits. Avoid adding credentials, proxy details, or local machine paths to committed files.

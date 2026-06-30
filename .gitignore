@@ -87,6 +87,8 @@ docs/*.md
 !docs/project_status.md
 !docs/public_release_notes.md
 !docs/public_mini_demo.md
+!docs/public_walkthrough.md
+!docs/troubleshooting.md
 !docs/faq.md
 !docs/dev_reports/
 !docs/dev_reports/README.md

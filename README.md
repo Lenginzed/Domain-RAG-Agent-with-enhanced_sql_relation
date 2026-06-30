@@ -212,6 +212,18 @@ The demo outputs candidate sources, `relation_path`, `relation_reasons`, and `fu
 
 More detail: [docs/public_mini_demo.md](docs/public_mini_demo.md)
 
+### Expected result
+
+The three demo queries should retrieve:
+
+- `EventDrivenReward` -> `event_driven_reward.py`
+- `HierarchySelfplay` -> `HierarchySelfplay.yaml`
+- `reward` / `risk` -> `stage13_risk_report.md`
+
+More detail: [docs/public_walkthrough.md](docs/public_walkthrough.md)
+
+Expected output: [examples/mini_corpus/EXPECTED_OUTPUT.md](examples/mini_corpus/EXPECTED_OUTPUT.md)
+
 ## Example Workflow
 
 1. Prepare your own local technical corpus.
@@ -232,6 +244,8 @@ The files under [examples/](examples/) show output shapes only. They are not ful
 - [Data and storage policy](docs/data_policy.md)
 - [Local setup](docs/local_setup.md)
 - [Public mini demo](docs/public_mini_demo.md)
+- [Public walkthrough](docs/public_walkthrough.md)
+- [Troubleshooting](docs/troubleshooting.md)
 - [Repository map](docs/repository_map.md)
 - [Project status](docs/project_status.md)
 - [FAQ](docs/faq.md)

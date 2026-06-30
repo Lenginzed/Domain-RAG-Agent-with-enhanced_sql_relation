@@ -52,7 +52,15 @@ conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
 conda run -n Lenginzed_RAG python -m pytest tests/test_v51_public_mini_demo.py
 ```
 
+For a step-by-step guide, see [public walkthrough](public_walkthrough.md).
+
 ## Expected Outputs
+
+The three configured queries should retrieve:
+
+- `EventDrivenReward` -> `event_driven_reward.py`
+- `HierarchySelfplay` -> `HierarchySelfplay.yaml`
+- `reward` / `risk` -> `stage13_risk_report.md`
 
 The run script writes:
 
@@ -62,6 +70,8 @@ tmp/mini_demo/mini_demo_results.md
 ```
 
 These files are generated locally and ignored by git.
+
+For console examples, see [expected output](../examples/mini_corpus/EXPECTED_OUTPUT.md).
 
 ## Safety Boundaries
 

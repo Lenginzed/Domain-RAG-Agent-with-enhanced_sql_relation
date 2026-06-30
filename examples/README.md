@@ -22,6 +22,7 @@ examples/
 - These files are not evidence of broad evaluation quality.
 - They are meant to help readers understand the workflow without exposing private local artifacts.
 - The mini corpus is fully synthetic and is used by the public runnable demo.
+- See `examples/mini_corpus/EXPECTED_OUTPUT.md` for the expected public mini demo output shape.
 
 ## Not Included
 
