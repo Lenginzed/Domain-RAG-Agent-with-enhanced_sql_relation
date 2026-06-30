@@ -1,0 +1,2 @@
+task_id,case_id,retrieval_mode,priority,failure_types,manual_judgment,manual_citation_judgment,manual_should_refuse,manual_fix_suggestion,manual_notes
+review::sample::case_001::enhanced_sql_relation,sample_case_001,enhanced_sql_relation,high,llm_empty_answer,,,,,

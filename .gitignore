@@ -1,0 +1,83 @@
+# local raw/private data
+data/raw/
+data/raw_imported/
+data/private/
+data/local/
+data/cache/
+data/external_manifest/
+data/processed/
+
+# eval outputs: only allow sample files
+data/eval/*
+!data/eval/README.md
+!data/eval/*.sample.json
+!data/eval/*.sample.jsonl
+!data/eval/*.sample.csv
+!data/eval/*.sample.md
+
+# local runtime configs: publish example configs only
+config/*.yaml
+!config/*.example.yaml
+
+# vector stores / sqlite / runtime storage
+storage/*
+storage/chroma*/
+storage/sqlite/*.db
+storage/sqlite/*.sqlite
+storage/sqlite/*.sqlite3
+
+# logs
+storage/logs/
+*.log
+
+# local model/cache files
+models/
+.ollama/
+.cache/
+
+# env
+.env
+.env.*
+!.env.example
+
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# temp
+tmp/
+temp/
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# large binary artifacts
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+
+# local papers and generated reports
+paper/
+docs/*.md
+!docs/architecture.md
+!docs/method_enhanced_sql_relation.md
+!docs/human_review_workflow.md
+!docs/local_setup.md
+!docs/data_policy.md
+!docs/dev_report_v5pre_github_staging.md
+!docs/dev_reports/
+!docs/dev_reports/README.md

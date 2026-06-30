@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "review_task_count": 1
+  },
+  "tasks": [
+    {
+      "task_id": "review::sample::case_001::enhanced_sql_relation",
+      "case_id": "sample_case_001",
+      "retrieval_mode": "enhanced_sql_relation",
+      "priority": "high",
+      "failure_types": ["llm_empty_answer"],
+      "manual_judgment": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+graph:
+  graph_version: v4e
+  enable_trace: true
+  stop_after_retrieval: false
+  enable_human_review_suggestion: true
+
+retrieval:
+  default_mode: enhanced_sql_relation
+  allowed_modes:
+    - dense
+    - enhanced
+    - keyword
+    - enhanced_keyword
+    - sql_relation
+    - enhanced_sql_relation
+
+enhanced_sql_relation:
+  config_path: config/sql_sag_v4d.example.yaml
+  expose_relation_debug: true
+  expose_category_intent: true
+  expose_fusion_reasons: true
+
+outputs:
+  graph_trace_jsonl: local_artifacts/logs/langgraph_traces.example.jsonl
+  graph_trace_index_json: local_artifacts/logs/langgraph_trace_index.example.json
+  graph_last_run_json: local_artifacts/logs/langgraph_last_run.example.json

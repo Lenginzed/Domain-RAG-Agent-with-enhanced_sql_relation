@@ -1,0 +1,1 @@
+{"case_id":"sample_case_001","retrieval_mode":"enhanced_sql_relation","answer_eval_status":"llm_empty_answer","failure_types":["llm_empty_answer"],"needs_human_review":true}

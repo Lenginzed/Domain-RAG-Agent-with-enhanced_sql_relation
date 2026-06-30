@@ -1,0 +1,33 @@
+collection:
+  persist_directory: local_artifacts/vector_store_example
+  collection_name: domain_rag_example
+
+sqlite:
+  db_path: local_artifacts/sql/example_sag_lite.db
+  readonly: true
+
+retrieval:
+  mode: enhanced_sql_relation
+  final_top_k: 8
+  max_chunks_per_source: 2
+  include_enhanced_keyword: true
+  include_sql_relation: true
+  enable_calibration: true
+
+fusion:
+  relation_score_weight: 0.35
+  enhanced_keyword_score_weight: 1.0
+  calibration_score_weight: 1.0
+  category_intent_bonus: 25.0
+  category_intent_penalty: -40.0
+  high_frequency_entity_penalty_enabled: true
+  high_frequency_threshold: 25
+  high_frequency_penalty: -20.0
+  normalize_relation_score: true
+  relation_score_clip_max: 120.0
+  preserve_sql_only_candidates: true
+  sql_only_base_score: 80.0
+
+outputs:
+  single_debug_json: examples/eval/enhanced_sql_relation_debug.sample.json
+  report_md: examples/eval/enhanced_sql_relation_report.sample.md

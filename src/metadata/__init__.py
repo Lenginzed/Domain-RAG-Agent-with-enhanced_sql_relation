@@ -1,0 +1,1 @@
+"""Metadata schema and validation."""

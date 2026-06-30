@@ -1,0 +1,2 @@
+case_id,retrieval_mode,answer_eval_status,failure_types,needs_human_review
+sample_case_001,enhanced_sql_relation,llm_empty_answer,llm_empty_answer,true

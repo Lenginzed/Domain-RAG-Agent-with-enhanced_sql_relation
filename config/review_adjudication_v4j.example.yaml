@@ -1,0 +1,21 @@
+inputs:
+  default_review_tasks_json: examples/eval/answer_eval_review_tasks_v4i.sample.json
+  default_review_tasks_csv: examples/eval/answer_eval_review_tasks_v4i.sample.csv
+  default_review_tasks_md: examples/eval/answer_eval_review_tasks_v4i.sample.md
+  default_summary_json: examples/eval/answer_eval_review_triage_summary.sample.json
+
+manual_fields:
+  manual_judgment:
+    allowed_values: ["", accept, reject_answer, revise_answer, keep_refusal, rerun_llm, expand_evidence, checker_false_positive, needs_discussion]
+  manual_citation_judgment:
+    allowed_values: ["", supported, unsupported, weak, checker_false_positive, not_applicable]
+  manual_should_refuse:
+    allowed_values: ["", yes, no, unclear, not_applicable]
+
+outputs:
+  adjudicated_tasks_json: examples/eval/answer_eval_review_adjudicated_v4j.sample.json
+  adjudicated_tasks_jsonl: examples/eval/answer_eval_review_adjudicated_v4j.sample.jsonl
+  adjudicated_tasks_csv: examples/eval/answer_eval_review_adjudicated_v4j.sample.csv
+  adjudication_summary_json: examples/eval/answer_eval_review_adjudication_summary.sample.json
+  adjudication_report_md: examples/eval/answer_eval_review_adjudication_v4j.sample.md
+  calibration_notes_md: examples/eval/answer_eval_calibration_notes_v4j.sample.md
