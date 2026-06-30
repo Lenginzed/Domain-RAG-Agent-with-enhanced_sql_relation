@@ -11,7 +11,7 @@ examples/
   configs/      notes for example configuration templates
   docs/         placeholder notes for future public walkthroughs
   eval/         sample answer-eval and review artifacts
-  mini_corpus/  placeholder for a future synthetic mini corpus
+  mini_corpus/  synthetic public mini corpus for the runnable demo
 ```
 
 ## How to Read These Files
@@ -21,6 +21,7 @@ examples/
 - Values are shortened and sanitized.
 - These files are not evidence of broad evaluation quality.
 - They are meant to help readers understand the workflow without exposing private local artifacts.
+- The mini corpus is fully synthetic and is used by the public runnable demo.
 
 ## Not Included
 

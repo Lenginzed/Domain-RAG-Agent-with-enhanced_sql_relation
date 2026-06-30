@@ -101,7 +101,7 @@ def main() -> int:
         config = load_config()
         result = run_regression(config)
         write_outputs(config, result)
-    except Exception as exc:  # noqa: BLE001 - smoke tests should report explicit failures.
+    except Exception as exc:  # noqa: BLE001 - lightweight checks should report explicit failures.
         print("Retrieval regression failed to run.")
         print(f"reason: {exc}")
         return 1

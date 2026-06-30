@@ -7,6 +7,7 @@
 - Documentation and example configs published.
 - Local runtime artifacts excluded.
 - Sanitized sample outputs included.
+- V5.1 adds a fully synthetic public mini demo that builds a temporary relation index locally.
 
 ## Implemented in Code
 
@@ -48,6 +49,7 @@ They should not be read as full benchmark results.
 ## Next Steps
 
 - Add a tiny synthetic mini corpus.
+- Extend the public mini demo with more synthetic relation cases.
 - Add CI-safe public tests.
 - Add reproducible mini-index build commands.
 - Improve public demo instructions.

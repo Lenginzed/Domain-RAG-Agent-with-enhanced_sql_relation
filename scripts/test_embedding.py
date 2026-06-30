@@ -93,7 +93,7 @@ def main() -> int:
                 "Run scripts/check_ollama.py and pull qwen3-embedding or embeddinggemma if needed."
             )
 
-        print("== Embedding smoke test ==")
+        print("== Embedding lightweight check ==")
         print(f"base_url: {base_url}")
         print(f"embedding_model: {embedding_model}")
 
@@ -112,7 +112,7 @@ def main() -> int:
         print(f"cosine_similarity: {similarity:.6f}")
         return 0
     except Exception as exc:  # noqa: BLE001 - this script should explain failures directly.
-        print("Embedding smoke test failed.")
+        print("Embedding lightweight check failed.")
         print(f"reason: {exc}")
         return 1
 

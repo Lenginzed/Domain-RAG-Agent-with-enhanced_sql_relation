@@ -9,19 +9,19 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEMO_FILES = {
     "data/raw/notes/rag_intro.md": """# RAG 基础说明
 
-synthetic demo data: 本文件是 V1 smoke test 使用的合成示例资料，不代表真实论文或真实实验。
+synthetic demo data: 本文件是 V1 lightweight check 使用的合成示例资料，不代表真实论文或真实实验。
 
 RAG（Retrieval-Augmented Generation）是一种先检索资料、再基于证据生成回答的方法。
 在本项目中，回答必须引用检索到的来源，资料不足时应说明当前知识库没有足够依据。
 """,
     "data/raw/notes/aircombat_intro.md": """# 敌机意图预测简介
 
-synthetic demo data: 本文件是 V1 smoke test 使用的合成示例资料，不代表真实空战资料。
+synthetic demo data: 本文件是 V1 lightweight check 使用的合成示例资料，不代表真实空战资料。
 
 敌机意图预测是指根据敌机的历史轨迹、相对位置、速度变化和战术动作，推测其可能的下一步行为。
 在多无人机空战场景中，意图预测可用于辅助编队决策、威胁评估和策略选择。
 """,
-    "data/raw/code/demo_policy.py": '''"""synthetic demo data for V1 smoke tests."""
+    "data/raw/code/demo_policy.py": '''"""synthetic demo data for V1 lightweight checks."""
 
 
 class DemoEvasivePolicy:
@@ -38,7 +38,7 @@ def predict_opponent_intent(relative_distance: float, closing_speed: float) -> s
         return "possible_attack"
     return "unknown"
 ''',
-    "data/raw/configs/demo_train.yaml": """# synthetic demo data for V1 smoke tests
+    "data/raw/configs/demo_train.yaml": """# synthetic demo data for V1 lightweight checks
 experiment_id: synthetic_demo_train
 seed: 42
 stage: v1_smoke

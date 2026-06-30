@@ -1,0 +1,24 @@
+mini_demo:
+  corpus_dir: examples/mini_corpus/docs
+  output_dir: tmp/mini_demo
+  sqlite_db_path: tmp/mini_demo/mini_demo_relation_index.db
+
+retrieval:
+  mode: enhanced_sql_relation_mini
+  top_k: 5
+  relation_score_clip_max: 120.0
+  enable_category_intent: true
+  enable_high_frequency_dampening: true
+
+queries:
+  - id: event_driven_reward
+    question: "EventDrivenReward 奖励逻辑在哪个代码文件中？"
+    expected_source: "event_driven_reward.py"
+
+  - id: hierarchy_selfplay
+    question: "HierarchySelfplay 对应哪个配置文件？"
+    expected_source: "HierarchySelfplay.yaml"
+
+  - id: reward_risk_report
+    question: "reward 和 risk 相关的实验报告有哪些？"
+    expected_source: "stage13_risk_report.md"

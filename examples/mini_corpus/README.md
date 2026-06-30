@@ -1,5 +1,14 @@
-# Mini Corpus Placeholder
+# Mini Corpus
 
-This directory is reserved for a future tiny synthetic corpus.
+This directory contains a tiny synthetic corpus for the public runnable demo.
 
-The current public release does not include a runnable sample corpus. When added, this directory should contain only synthetic or explicitly public files that are safe to redistribute.
+It is not derived from the private local corpus. The files are intentionally short and are only meant to demonstrate relation-style retrieval fields such as `relation_path`, `relation_reasons`, and `fusion_reasons`.
+
+Run from the repository root:
+
+```powershell
+conda run -n Lenginzed_RAG python scripts/build_mini_demo_index_v51.py
+conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
+```
+
+Generated artifacts are written to `tmp/mini_demo/` and are ignored by git.

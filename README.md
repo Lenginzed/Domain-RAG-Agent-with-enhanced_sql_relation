@@ -1,4 +1,4 @@
-# Domain-RAG-Agent-with-enhanced_sql_relation
+﻿# Domain-RAG-Agent-with-enhanced_sql_relation
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.11%2B-3776AB)
@@ -115,7 +115,7 @@ More detail: [docs/comparison_standard_rag_vs_enhanced_sql_relation.md](docs/com
 apps/      Streamlit app entrypoints
 src/       core modules
 scripts/   CLI workflows
-tests/     smoke and regression tests
+tests/     lightweight and regression checks
 config/    example configs only
 docs/      documentation
 examples/  sanitized sample artifacts
@@ -180,7 +180,7 @@ Do not commit edited local configs or `.env`.
 
 Setup notes: [docs/local_setup.md](docs/local_setup.md)
 
-## Smoke Tests
+## Lightweight Checks
 
 These tests are lightweight checks for selected modules and public-safe workflows. They do not rebuild indexes or call an LLM:
 
@@ -189,6 +189,28 @@ conda run -n Lenginzed_RAG python -m pytest tests/test_answer_eval_v4g.py tests/
 ```
 
 Some tests in the original research workspace depend on local-only artifacts. Public users should start from module-level tests and add their own local corpus/indexes before running full workflows.
+
+## Public Mini Demo
+
+The public mini demo uses a fully synthetic mini corpus under [examples/mini_corpus/](examples/mini_corpus/). It does not require Chroma, a prebuilt SQLite DB, Ollama, an LLM, or any private corpus.
+
+It builds a temporary SQLite relation index in `tmp/mini_demo/`, then runs a minimal relation-style retrieval demonstration:
+
+```powershell
+conda run -n Lenginzed_RAG python scripts/build_mini_demo_index_v51.py
+conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
+conda run -n Lenginzed_RAG python -m pytest tests/test_v51_public_mini_demo.py
+```
+
+Expected retrieval targets:
+
+- `EventDrivenReward` -> `event_driven_reward.py`
+- `HierarchySelfplay` -> `HierarchySelfplay.yaml`
+- `reward` / `risk` -> `stage13_risk_report.md`
+
+The demo outputs candidate sources, `relation_path`, `relation_reasons`, and `fusion_reasons`. Generated files stay under `tmp/mini_demo/` and are ignored by git.
+
+More detail: [docs/public_mini_demo.md](docs/public_mini_demo.md)
 
 ## Example Workflow
 
@@ -209,6 +231,7 @@ The files under [examples/](examples/) show output shapes only. They are not ful
 - [Human review workflow](docs/human_review_workflow.md)
 - [Data and storage policy](docs/data_policy.md)
 - [Local setup](docs/local_setup.md)
+- [Public mini demo](docs/public_mini_demo.md)
 - [Repository map](docs/repository_map.md)
 - [Project status](docs/project_status.md)
 - [FAQ](docs/faq.md)
@@ -229,7 +252,7 @@ More detail: [docs/project_status.md](docs/project_status.md)
 
 ## Roadmap
 
-- Add a tiny synthetic mini corpus for public reproducibility.
+- Expand the synthetic mini corpus into a slightly richer public demonstration.
 - Add CI-safe tests that do not require local Chroma, SQLite, Ollama, or private data.
 - Improve public setup scripts for local index creation.
 - Add clearer Streamlit demo instructions with sample artifacts.

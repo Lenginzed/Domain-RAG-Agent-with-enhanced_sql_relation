@@ -75,7 +75,19 @@ conda run -n Lenginzed_RAG python -m pytest tests/test_answer_eval_v4g.py tests/
 
 Some tests from the original workspace assume local artifacts. If a test expects a local index or private eval output, create your own local artifacts first or run a narrower test subset.
 
-## 7. Streamlit UI
+## 7. Public Mini Demo
+
+The public mini demo uses only synthetic files and local temporary outputs:
+
+```powershell
+conda run -n Lenginzed_RAG python scripts/build_mini_demo_index_v51.py
+conda run -n Lenginzed_RAG python scripts/run_mini_demo_v51.py
+conda run -n Lenginzed_RAG python -m pytest tests/test_v51_public_mini_demo.py
+```
+
+It does not require Chroma, Ollama, a prebuilt SQLite DB, or private documents. Generated files are written under `tmp/mini_demo/` and should not be committed.
+
+## 8. Streamlit UI
 
 After local configs and artifacts are prepared:
 

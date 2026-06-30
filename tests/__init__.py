@@ -1,1 +1,1 @@
-"""Smoke tests for Domain-RAG Agent."""
+"""Lightweight checks for Domain-RAG Agent."""

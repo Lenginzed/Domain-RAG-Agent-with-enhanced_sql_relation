@@ -321,7 +321,7 @@ def print_sources(title: str, sources: list[dict[str, Any]]) -> None:
 def build_prompt(question: str, documents: list[Document]) -> str:
     evidence = format_evidence(documents)
     return f"""/no_think
-你是 Domain-RAG Agent 的真实资料 smoke test 问答模块。
+你是 Domain-RAG Agent 的真实资料 lightweight check 问答模块。
 只能根据下面的检索资料回答问题。
 如果资料不足，必须明确说明“当前知识库没有足够依据”。
 回答事实、代码位置、配置含义或实验结果时必须引用来源编号，例如 [S1]。

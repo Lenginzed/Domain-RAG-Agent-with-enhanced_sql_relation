@@ -4,7 +4,7 @@
 apps/      Streamlit app entrypoints
 src/       core modules
 scripts/   CLI workflows
-tests/     smoke and regression tests
+tests/     lightweight and regression checks
 config/    example configs only
 docs/      documentation
 examples/  sanitized sample artifacts
@@ -52,6 +52,8 @@ Public documentation for architecture, method design, local setup, data policy, 
 ## examples/
 
 Sanitized samples that show output structure. These are not full local evaluation artifacts.
+
+`examples/mini_corpus/` contains a synthetic public mini corpus for the runnable demo.
 
 ## data/eval/
 

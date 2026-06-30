@@ -29,7 +29,7 @@ def test_retrieval_eval_dataset_exists_and_has_enough_questions() -> None:
 
 
 def test_retrieval_eval_latest_results_smoke() -> None:
-    assert RESULT_PATH.exists(), "Run scripts/run_retrieval_eval.py before this smoke test"
+    assert RESULT_PATH.exists(), "Run scripts/run_retrieval_eval.py before this lightweight check"
     result = json.loads(RESULT_PATH.read_text(encoding="utf-8"))
     assert result["total_questions"] >= 16
     assert set(result["modes"]) == {"dense", "enhanced", "keyword", "enhanced_keyword"}

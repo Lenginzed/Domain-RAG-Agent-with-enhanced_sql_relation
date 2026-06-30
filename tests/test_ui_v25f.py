@@ -88,7 +88,7 @@ def test_manual_review_export_appends_csv(tmp_path) -> None:
         "manual_judgment": "correct",
         "manual_citation_judgment": "",
         "manual_should_refuse": "false",
-        "manual_notes": "smoke test",
+        "manual_notes": "lightweight check",
     }
     service.append_manual_review_export(record, output)
     service.append_manual_review_export(record, output)
