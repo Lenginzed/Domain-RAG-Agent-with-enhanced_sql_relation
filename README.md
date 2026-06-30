@@ -119,7 +119,7 @@ Local data and runtime artifacts must stay outside git. The included `.gitignore
 
 See [docs/data_policy.md](docs/data_policy.md).
 
-## Quick Smoke Test
+## Quick Test
 
 These checks validate importability and lightweight logic only. They do not rebuild indexes or call an LLM:
 
@@ -148,7 +148,7 @@ The public repository contains the code and documentation needed to understand a
 ## Roadmap
 
 - Safer local setup scripts for rebuilding sample indexes.
-- More portable smoke tests that do not assume local private artifacts.
+- More portable tests that do not assume local private artifacts.
 - Optional UI refinements for human review and trace browsing.
 - Optional broader evaluation once a public sample corpus is prepared.
 - Later V5 work on a more complete controlled agent workflow.
