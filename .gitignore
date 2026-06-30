@@ -78,6 +78,10 @@ docs/*.md
 !docs/human_review_workflow.md
 !docs/local_setup.md
 !docs/data_policy.md
-!docs/dev_report_v5pre_github_staging.md
+!docs/comparison_standard_rag_vs_enhanced_sql_relation.md
+!docs/repository_map.md
+!docs/project_status.md
+!docs/public_release_notes.md
+!docs/faq.md
 !docs/dev_reports/
 !docs/dev_reports/README.md
